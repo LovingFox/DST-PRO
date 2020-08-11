@@ -58,19 +58,19 @@ def game_core_v3(number):
     Функция принимает загаданное число и возвращает число попыток
     '''
     count = 1
-    min_number = 1
-    max_number = 101
+    min_predict = 1
+    max_predict = 101
 
     predict = 50
     while number != predict:
         count+=1
         if number > predict: 
-            mid = (max_number-predict)/2
+            mid = (max_predict-predict)/2
             predict = round(mid) + predict
         elif number < predict: 
-            max_number = predict # ограничиваем верхнюю границу
-            mid = (predict-min_number)/2
-            predict = round(mid) + min_number
+            max_predict = predict # ограничиваем верхнюю границу
+            mid = (predict-min_predict)/2
+            predict = round(mid) + min_predict
     return(count) # выход из цикла, если угадали
 
 
