@@ -4,7 +4,6 @@
 
 
 ##  Проект 5. Компьютер говорит "Нет"
-<hr>
 #### Запуск
 Загрузить в Jupiter Notebook файл *sf-dst-credit-scoring-revyakin.ipynb* из директории *module_5*.
 
